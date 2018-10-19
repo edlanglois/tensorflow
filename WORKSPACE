@@ -1,6 +1,13 @@
 workspace(name = "org_tensorflow")
 
 http_archive(
+    name = "bazel_skylib",
+    sha256 = "bbccf674aa441c266df9894182d80de104cabd19be98be002f6d478aaa31574d",
+    strip_prefix = "bazel-skylib-2169ae1c374aab4a09aa90e65efe1a3aad4e279b",
+    urls = ["https://github.com/bazelbuild/bazel-skylib/archive/2169ae1c374aab4a09aa90e65efe1a3aad4e279b.tar.gz"],
+)
+
+http_archive(
     name = "io_bazel_rules_closure",
     sha256 = "a38539c5b5c358548e75b44141b4ab637bba7c4dc02b46b1f62a96d6433f56ae",
     strip_prefix = "rules_closure-dbb96841cc0a5fb2664c37822803b06dab20c7d1",

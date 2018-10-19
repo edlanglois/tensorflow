@@ -365,12 +365,13 @@ def tf_workspace(path_prefix = "", tf_repo_name = ""):
         },
     )
 
+    # Latest Commit
     PROTOBUF_URLS = [
-        "https://mirror.bazel.build/github.com/google/protobuf/archive/v3.6.0.tar.gz",
-        "https://github.com/google/protobuf/archive/v3.6.0.tar.gz",
+        "https://mirror.bazel.build/github.com/google/protobuf/archive/333b3ceab6b6d4b65ea7465b87321b805f838b36.tar.gz",
+        "https://github.com/google/protobuf/archive/333b3ceab6b6d4b65ea7465b87321b805f838b36.tar.gz",
     ]
-    PROTOBUF_SHA256 = "50a5753995b3142627ac55cfd496cebc418a2e575ca0236e29033c67bd5665f4"
-    PROTOBUF_STRIP_PREFIX = "protobuf-3.6.0"
+    PROTOBUF_SHA256 = "2a5d8df55e34ce2af83621fc5556e3f69b48a2f46f5e93186d9e18e02ad86d63"
+    PROTOBUF_STRIP_PREFIX = "protobuf-333b3ceab6b6d4b65ea7465b87321b805f838b36"
 
     tf_http_archive(
         name = "protobuf_archive",
